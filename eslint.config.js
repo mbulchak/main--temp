@@ -31,6 +31,19 @@ module.exports = [
     },
     plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier'],
     rules: {
+      'implicit-arrow-linebreak': 0,
+      'import/prefer-default-export': 0,
+      'max-len': [
+        'error',
+        {
+          ignoreTemplateLiterals: true,
+          ignoreComments: true,
+        },
+      ],
+      'no-console': 'warn',
+      'no-param-reassign': [2, { props: true }],
+      'react/react-in-jsx-scope': 0,
+      'react/destructuring-assignment': 0,
       'no-var': 'error',
       'react/react-in-jsx-scope': 'off',
       'react/jsx-uses-react': 'off',
